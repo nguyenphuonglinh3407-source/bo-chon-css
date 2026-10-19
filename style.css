@@ -1,0 +1,71 @@
+/* 1. Element selector: Định dạng toàn bộ nền của trang */
+body {
+    background-color: #f4f6f9; /* Đổi màu nền trang thành xám xanh nhạt */
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* 2. Grouping selector (Gộp bộ chọn): Đặt chung màu chữ cho tiêu đề và đoạn văn */
+h1, p {
+    color: #2c3e50;
+}
+
+/* 3. ID selector: Căn giữa tiêu đề chính */
+#main-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* 4. Class selector: Căn giữa và tạo khoảng cách cho đoạn văn mô tả */
+.description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Bỏ dấu chấm của danh sách và căn giữa */
+.hobby-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Class selector kết hợp: Định dạng chung cho các mục sở thích */
+.hobby-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* 5. Pseudo-class (:nth-child): Định dạng danh sách với các màu sắc khác nhau */
+.hobby-item:nth-child(1) {
+    background-color: #e74c3c; /* Đỏ */
+}
+.hobby-item:nth-child(2) {
+    background-color: #3498db; /* Xanh dương */
+}
+.hobby-item:nth-child(3) {
+    background-color: #2ecc71; /* Xanh lá */
+}
+
+/* ID selector: Định dạng hình dáng nút bấm */
+#action-btn {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background-color: #9b59b6; /* Tím */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* 6. Pseudo-class (:hover): Đổi màu nút khi đưa chuột qua */
+#action-btn:hover {
+    background-color: #8e44ad; /* Tím đậm hơn khi hover */
+}
